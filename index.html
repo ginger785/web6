@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Задание 3</title>
+    <link
+      href="https://openedu.kubsu.ru/theme/image.php/boost/theme/1725708672/favicon"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-cont">
+        <img class="logo" src="logo-Photoroom.png" alt="Лого">
+        <div class="header-title">My page</div>
+      </div>
+        <!-- Навигация -->
+        <nav class="menu">
+          <a class="navcont" href="#linkedlist">Список гиперссылок</a>
+          <a class="navcont" href="#table">Таблица</a>
+          <a class="navcont" href="#form">Форма</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="content">
+      <!-- Список гиперссылок -->
+      <a id="linkedlist"></a>
+      <div class="flex-container">
+        <div class="link-list">
+          <ul>
+            <li><a href="http://kubsu.ru">КубГУ абсолютная гиперссылка</a></li>
+            <li>
+              <a href="https://kubsu.ru">КубГУ гиперссылка с протоколом https</a>
+            </li>
+            <li>
+              <a href="https://kubsu.ru">
+                <img src="kubanskiy.jpg" width="250" height="250" alt="Логотип КубГУ"
+              /></a>
+            </li>
+            <li>
+              <a href="links.html">Сокращенная ссылка на внутреннюю страницу</a>
+            </li>
+            <li><a href="index.html">Сокращенная ссылка на главную страницу</a></li>
+            <li><a href="#fragment-page">Ссылка на фрагмент текущей страницы</a></li>
+            <li>
+              <a href="index.html?p1=v1&?p2=v2&?p3=v3"
+                >Ссылка с тремя параметрами в URL</a
+              >
+            </li>
+            <li>
+              <a href="index.html?id=fragment-page">Ссылка с параметром id в URL</a>
+            </li>
+            <li>
+              <a href="relative.html"
+                >Относительная ссылка на страницу в текущем каталоге</a
+              >
+            </li>
+            <li>
+              <a href="about/about.html"
+                >Относительная ссылка на страницу в каталоге about</a
+              >
+            </li>
+            <li>
+              <a href="../links.html"
+                >Ссылка на страницу в каталоге уровня выше текущей</a
+              >
+            </li>
+            <li>
+              <a href="../../practice.html"
+                >Ссылка на страницу в каталоге двумя уровнями выше текущей</a
+              >
+            </li>
+            <li>
+              <p>
+                Контекстная ссылка: <br />
+                Вы можете ознакомиться с
+                <a href="https://www.kubsu.ru/ru/all_achievments">достижениями</a>
+                КубГУ.
+              </p>
+            </li>
+            <li>
+              <a href="https://kubsu.ru/index.php#block-system-main"
+                >Ссылка на фрагмент страницы стороннего сайта</a
+              >
+            </li>
+            <img
+              src="un-1.jpg"
+              width="300"
+              height="200"
+              alt="Здание университета"
+              usemap="#kubsu"
+            />
+            <li>
+              <map name="kubsu">
+                <area
+                  shape="rect"
+                  coords="86,148,228,153"
+                  href="https://kubsu.ru/index.php"
+                  alt="Сайт университета"
+                />
+                <area
+                  shape="circle"
+                  coords="268,175,18"
+                  href="https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%9A%D1%83%D0%B1%D0%93%D0%A3.png#filehistory"
+                  alt="История логотипа КубГУ"
+                />
+              </map>
+            </li>
+            <li><a href="##">Ссылка с пустым href</a></li>
+            <li><a>Ссылка без href</a></li>
+            <li>
+              <a href="https://kubsu.ru" rel="nofollow"
+                >Ссылка, по которой запрещен переход поисковиками</a
+              >
+            </li>
+            <li>
+              <a href="https://kubsu.ru" rel="noindex"
+                >Ссылка, запрещенная для индексации поисковиками</a
+              >
+            </li>
+            <li>
+              <ol>
+                <li>
+                  <a
+                    href="https://www.kubsu.ru/ru/university/history-tradition"
+                    title="История и традиции КубГУ"
+                    >Познакомьтесь с историями и традициями КубГУ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.kubsu.ru/ru/science"
+                    title="Наука и инновации КубГУ"
+                    >Вступайте в научное сообщество КубГУ</a
+                  >
+                </li>
+              </ol>
+            </li>
+            <li>
+              <a href="ftp://user:pass123@adress.ru/Temp/file.txt"
+                >ссылка на файл на сервере FTP с авторизацией</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Таблица -->
+      <a id="table"></a>
+      <div class="table-container">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th id="1" colspan="2">Машина</th>
+              <th id="3">Описание</th>
+              <th id="4">Цена</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>BMW</td>
+              <td>BMW M8 Competition, BMW M8 Coupe и BMW M850i xDrive Coupe</td>
+              <td>
+                Автомобили M BMW 8 серии Coupe доставят Вам максимальное
+                удовольствие от вождения в атмосфере спортивного стиля и роскоши
+                как на дорогах, так и на гоночной трассе
+              </td>
+              <td>от 12 500 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Mercedes-Benz</td>
+              <td>Mercedes-Benz AMG GT 63 S</td>
+              <td>
+                Mercedes-Benz AMG — это автомобили, которые воплощают передовые
+                достижения автомобильной индустрии. Они разрабатываются
+                специальным подразделением компании в Аффальтербахе и
+                отличаются: потрясающей динамикой, отточенной управляемостью,
+                стильным и эффектным внешним видом и интерьером, уникальными
+                опциями комфорта.
+              </td>
+              <td>от 9 900 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Nissan</td>
+              <td>Nissan GT-R</td>
+              <td>
+                Nissan GT-R — автомобиль, выпускаемый японской маркой Nissan с
+                2007 года. Он имеет компоновку сидений 2 + 2 и считается
+                одновременно спортивным автомобилем и Grand tourer.Автомобиль
+                построен на платформе PM и оснащён инновационными концепциями и
+                технологиями, такими как улучшенная аэродинамика, двигатель
+                VR38DETT, активная подвеска и система полного привода ATTESA
+                E-TS Pro.
+              </td>
+              <td>от 7 000 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Porsche</td>
+              <td>Porsche 911 GT3 RS</td>
+              <td>
+                Porsche 911 GT3 RS — это двухместное спортивное купе
+                премиум-класса. Технические характеристики: оппозитная
+                атмосферная бензиновая шестерка объёмом 3996 кубических
+                сантиметров; мощность — 520 лошадиных сил при 8250 об/мин и 470
+                Нм крутящего момента при 6000 оборотах коленчатого вала в
+                минуту; семиступенчатая преселективная роботизированная коробка
+                передач с двумя сцеплениями;максимальная скорость — 312
+                километров в час.
+              </td>
+              <td>35 000 000 руб.</td>
+            </tr>
+            <tr>
+              <td>Ferrari</td>
+              <td>Ferrari F8 Tributo</td>
+              <td>
+                Ferrari F8 Tributo — это двухместное купе, которое было
+                представлено на международном автосалоне в Женеве 5 марта 2019
+                года. Основные характеристики: 720-сильный бензиновый двигатель
+                V8 turbo — самый мощный мотор V8 в истории Ferrari;
+                исключительная управляемость благодаря применению передовых
+                решений в области аэродинамики; система контроля управляемости
+                Side Slip Angle Control новейшей версии 6.1; система Ferrari
+                Dynamic Enhancer (FDE+), которая индивидуально регулирует
+                давление в тормозных механизмах.
+              </td>
+              <td>от 30 000 000 руб</td>
+            </tr>
+            <tr>
+              <td>Pagani</td>
+              <td>Pagani Zonda</td>
+              <td>
+                Pagani Zonda — среднемоторный спортивный автомобиль итальянского
+                производителя спортивных автомобилей Pagani. Были выпущены как
+                2-дверные купе, так и родстер, а также третий новый вариант —
+                barchetta. Конструкция в основном выполнена из углеродного
+                волокна.
+              </td>
+              <td>от 171 000 000 руб.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>  
+
+      <!-- Форма -->
+      <a id="form"></a>
+      <h2>Зарегистрируйтесь на нашем сайте</h2>
+      <form action="test@example.com">
+        <label>ФИО: <input type="text" /><br /></label>
+        <label>Телефон: <input type="tel" /><br /></label>
+        <label>E-mail: <input type="email" /><br /></label>
+        <label>Дата рождения: <input type="date" /><br /></label>
+
+        <label>Пол:</label>
+        <label><input type="radio" name="gender" />М</label>
+        <label><input type="radio" name="gender" />Ж<br /></label>
+
+        <label>
+          Любимый язык программирования:
+          <select name="prog-lang" [] size="5" id="prog-lang" multiple>
+            <option value="1">JavaScript</option>
+            <option value="2">PHP</option>
+            <option value="3">Python</option>
+            <option value="4">Java</option>
+            <option value="5">Pascal</option>
+            <option value="6">С</option>
+            <option value="7">С++</option>
+            <option value="8">Haskel</option>
+            <option value="9">Clojure</option>
+            <option value="10">Prolog</option>
+            <option value="11">Scala</option></select
+          ><br />
+        </label>
+
+        <label>
+          Биография:<br />
+          <textarea name="bio" id="bio"></textarea><br />
+        </label>
+
+        <label><input type="checkbox" />С контрактом ознакомлен(-а)</label><br />
+        <input type="submit" value="Сохранить" />
+      </form>
+    </div>
+
+    <!--Подвал -->
+    <footer>
+      <div class="fcontent">
+        <p>&copy; Мерзлякова В.В. 27/2</p>
+      </div>
+    </footer>
+  </body>
+</html>

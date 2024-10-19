@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    font-family: URW Chancery L, 'Times New Roman', Times, serif;
+    background-color: #e38bbf;
+    text-decoration: none;
+}
+
+a {
+    color: #bc2c79;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+
+/*  Шапка */
+.header {
+    background-color: #bc2c79;
+    color: #e7e3e3;
+    padding: 20px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #c61f6a;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.header-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 960px;
+    padding: 0 20px;
+}
+
+/* ЛОГОТИП */
+.logo {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: auto 90px;
+}
+
+.logo img {
+    height: 30px;
+    margin-left: 10px;
+    float: none;
+    margin: 0;
+    position: absolute;
+}
+
+/*Навигация*/
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #e38bbf;
+    margin-top: 1%;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.navcont {
+    background-color: #e38bbf;
+    border: 2px solid #e38bbf;
+    background-repeat: 8px;
+    height: 40px;
+    padding-top: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-radius: 8px;
+    color: #dad7d7;
+    line-height: 2;
+    text-decoration: none;
+    font-style: 15px;
+}
+
+.navcont:hover {
+    background-color: #F4DBDB;
+    border: 2px solid #CD4662;
+    border-radius: 8px;
+    color: black;
+}
+
+.header-title {
+    font-weight: 500;
+    font-size: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+}
+
+
+.content {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+
+}
+
+/* Flex-контейнер для списка и таблицы */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* Ширина контейнера 100% */
+}
+
+.table-container {
+    order: 1;
+}
+
+.link-list {
+    order: 2;
+}
+
+
+/* Таблица */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 3px #0c0808;
+}
+
+.data-table th,
+.data-table td {
+    padding: 10px;
+    text-align: left;
+    border: solid 1px #384357;
+}
+
+.data-table th {
+    background-color: #bc2c79;
+    color: #fff;
+    grid-column: auto;
+    border: solid 1px #dad7d7;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #bc2c79;
+}
+
+h2 {
+    background-color: #bc2c79;
+    padding-left: 25px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+/* подвал */
+footer {
+    background-color: #c61f6a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: left;
+    width: 100%;
+}
+
+/* Flex-контейнер для списка и таблицы */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-container {
+    order: 1;
+}
+
+.link-list {
+    order: 2;
+}
+
+/* Стили для экранов больше 768px */
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: flex-end;
+        column-gap: 20px;
+        background-color: transparent;
+        margin-top: 0;
+    }
+
+    .menu a {
+        width: auto;
+        padding: 15px 25px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .table-container {
+        order: 2;
+    }
+
+    .link-list {
+        order: 1;
+    }
+}
